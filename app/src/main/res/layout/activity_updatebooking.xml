@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:background="@drawable/cubaan"
+    tools:context="com.syafikha.e_baebishita.updatebooking">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="Update Booking"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/textView25"
+            android:layout_marginTop="12dp"
+            android:text="Booking ID"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtBookingID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView26"
+            android:layout_alignBottom="@+id/textView26"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26"
+            android:layout_below="@+id/textView26"
+            android:layout_marginTop="16dp"
+            android:text="Parent HP" />
+
+        <TextView
+            android:id="@+id/txtParentHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtBookingID"
+            android:layout_alignLeft="@+id/txtBookingID"
+            android:layout_alignRight="@+id/txtBookingID"
+            android:layout_alignStart="@+id/txtBookingID"
+            android:layout_alignTop="@+id/textView28"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView28"
+            android:layout_alignStart="@+id/textView28"
+            android:layout_below="@+id/textView28"
+            android:layout_marginTop="17dp"
+            android:text="Babysitter HP"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtBabysitterHp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView30"
+            android:layout_alignEnd="@+id/txtParentHP"
+            android:layout_alignLeft="@+id/txtParentHP"
+            android:layout_alignRight="@+id/txtParentHP"
+            android:layout_alignStart="@+id/txtParentHP"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView30"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="21dp"
+            android:text="Date Start"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtDateStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView32"
+            android:layout_alignEnd="@+id/txtBabysitterHp"
+            android:layout_alignLeft="@+id/txtBabysitterHp"
+            android:layout_alignRight="@+id/txtBabysitterHp"
+            android:layout_alignStart="@+id/txtBabysitterHp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView32"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignRight="@+id/textView32"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/edtDateStart"
+            android:layout_marginTop="21dp"
+            android:text="Date End"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtDateEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtDateStart"
+            android:layout_alignLeft="@+id/edtDateStart"
+            android:layout_alignRight="@+id/edtDateStart"
+            android:layout_alignStart="@+id/edtDateStart"
+            android:layout_below="@+id/edtDateStart"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView33"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_below="@+id/edtDateEnd"
+            android:layout_marginTop="22dp"
+            android:text="Time Start"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtTimeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView40"
+            android:layout_alignEnd="@+id/edtDateEnd"
+            android:layout_alignLeft="@+id/edtDateEnd"
+            android:layout_alignRight="@+id/edtDateEnd"
+            android:layout_alignStart="@+id/edtDateEnd"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView33"
+            android:layout_alignRight="@+id/textView33"
+            android:layout_below="@+id/edtTimeStart"
+            android:layout_marginTop="23dp"
+            android:text="Time End" />
+
+        <EditText
+            android:id="@+id/edtTimeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView41"
+            android:layout_alignBottom="@+id/textView41"
+            android:layout_alignEnd="@+id/edtTimeStart"
+            android:layout_alignLeft="@+id/edtTimeStart"
+            android:layout_alignRight="@+id/edtTimeStart"
+            android:layout_alignStart="@+id/edtTimeStart"
+            android:ems="10"
+            android:inputType="time" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView41"
+            android:layout_alignStart="@+id/textView41"
+            android:layout_below="@+id/edtTimeStart"
+            android:layout_marginTop="21dp"
+            android:text="Area"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtTimeStart"
+            android:layout_alignLeft="@+id/edtTimeStart"
+            android:layout_alignRight="@+id/edtTimeStart"
+            android:layout_alignStart="@+id/edtTimeStart"
+            android:layout_below="@+id/edtTimeStart"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView30"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_below="@+id/edtArea"
+            android:layout_marginTop="27dp"
+            android:text="Packages"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtPackages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtArea"
+            android:layout_alignLeft="@+id/edtArea"
+            android:layout_alignRight="@+id/edtArea"
+            android:layout_alignStart="@+id/edtArea"
+            android:layout_below="@+id/edtArea"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView43"
+            android:layout_alignStart="@+id/textView43"
+            android:layout_below="@+id/edtPackages"
+            android:layout_marginTop="17dp"
+            android:text="Location to babysit"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView44"
+            android:layout_alignBottom="@+id/textView44"
+            android:layout_alignEnd="@+id/edtPackages"
+            android:layout_alignRight="@+id/edtPackages"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView42"
+            android:layout_alignStart="@+id/textView42"
+            android:layout_below="@+id/edtLocation"
+            android:layout_marginTop="14dp"
+            android:text="Num of child"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtNumChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtLocation"
+            android:layout_alignStart="@+id/edtLocation"
+            android:layout_below="@+id/edtLocation"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtSpecial"
+            android:layout_alignBottom="@+id/edtSpecial"
+            android:layout_alignLeft="@+id/textView46"
+            android:layout_alignStart="@+id/textView46"
+            android:text="Special need" />
+
+        <EditText
+            android:id="@+id/edtSpecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtNumChild"
+            android:layout_alignStart="@+id/edtNumChild"
+            android:layout_below="@+id/edtNumChild"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtAdditional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtSpecial"
+            android:layout_alignStart="@+id/edtSpecial"
+            android:layout_below="@+id/edtSpecial"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnUpdate3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnBack"
+            android:layout_alignTop="@+id/btnBack"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@+id/btnBack"
+            android:layout_toRightOf="@+id/btnBack"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtAdditional"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/edtAdditional"
+            android:layout_toStartOf="@+id/edtAdditional"
+            android:text="Back"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView47"
+            android:layout_alignStart="@+id/textView47"
+            android:layout_below="@+id/edtSpecial"
+            android:text="Additional Info"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+</ScrollView>

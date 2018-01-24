@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syafikha.e_baebishita.profile"
+    android:background="@drawable/cubaan">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="55dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Phone Number"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="34dp"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@+id/textView11"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_marginTop="31dp"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Religion"
+        android:layout_below="@+id/txtParentAddress"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/txtParentName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_alignTop="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/txtParentPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtParentName"
+        android:layout_alignLeft="@+id/txtParentName"
+        android:layout_alignRight="@+id/txtParentName"
+        android:layout_alignStart="@+id/txtParentName"
+        android:layout_alignTop="@+id/textView8"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtParentPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtParentPhoneNum"
+        android:layout_alignLeft="@+id/txtParentPhoneNum"
+        android:layout_alignRight="@+id/txtParentPhoneNum"
+        android:layout_alignStart="@+id/txtParentPhoneNum"
+        android:layout_alignTop="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/txtParentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignLeft="@+id/txtParentPassword"
+        android:layout_alignStart="@+id/txtParentPassword"
+        android:layout_alignRight="@+id/txtParentPassword"
+        android:layout_alignEnd="@+id/txtParentPassword" />
+
+    <TextView
+        android:id="@+id/txtParentReligion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignEnd="@+id/txtParentAddress"
+        android:layout_alignLeft="@+id/txtParentAddress"
+        android:layout_alignRight="@+id/txtParentAddress"
+        android:layout_alignStart="@+id/txtParentAddress"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnUpdate1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtParentReligion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnBackProfile"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnUpdate1"
+        android:layout_alignStart="@+id/btnUpdate1"
+        android:layout_below="@+id/btnUpdate1"
+        android:layout_marginTop="20dp"
+        android:text="Back" />
+
+</RelativeLayout>

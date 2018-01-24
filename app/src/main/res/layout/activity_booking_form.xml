@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syafikha.e_baebishita.bookingForm"
+    android:background="@drawable/cubaan">
+
+    <EditText
+        android:id="@+id/edtTimeEnd"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtTimeStart"
+        android:layout_alignBottom="@+id/edtTimeStart"
+        android:layout_alignLeft="@+id/edtDateEnd"
+        android:layout_alignStart="@+id/edtDateEnd"
+        android:ems="10"
+        android:hint="Time End"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginTop="26dp"
+        android:text="Booking Form"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <EditText
+        android:id="@+id/edtDateStart"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date Start"
+        android:inputType="date"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/txtBabysitterHp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtDateEnd"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtDateStart"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/edtDateStart"
+        android:layout_toRightOf="@+id/edtDateStart"
+        android:ems="10"
+        android:hint="Date End"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edtTimeStart"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtDateStart"
+        android:layout_alignStart="@+id/edtDateStart"
+        android:layout_below="@+id/edtDateStart"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Time Start"
+        android:inputType="time" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/edtTimeEnd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/spinnerPackages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView24"
+            android:layout_alignStart="@+id/textView24"
+            android:layout_below="@+id/edtTimeStart"
+            android:layout_marginTop="25dp"
+            android:entries="@array/packages_spinner" />
+
+        <Spinner
+            android:id="@+id/spinnerLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/location_spinner" />
+
+        <Spinner
+            android:id="@+id/spinnerNumChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/numChild_spinner" />
+
+        <Spinner
+            android:id="@+id/spinnerSpecial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/special_spinner" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtAdditional"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Additional Info"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/btnBook"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnBacForm"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignBaseline="@+id/btnBook"
+        android:layout_alignBottom="@+id/btnBook"
+        android:layout_toLeftOf="@+id/textView24"
+        android:layout_toStartOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/btnBook"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/edtTimeEnd"
+        android:layout_alignStart="@+id/edtTimeEnd"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:id="@+id/txtBabysitterHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtDateStart"
+        android:layout_alignStart="@+id/edtDateStart"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnBook"
+        android:layout_alignRight="@+id/btnBook"
+        android:layout_alignTop="@+id/txtBabysitterHp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syafikha.e_baebishita.book"
+    android:background="@drawable/cubaan">
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Area to babysit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <Spinner
+        android:id="@+id/spinnerArea"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView22"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="39dp"
+        android:entries="@array/area_spinner"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="143dp"
+        android:text="Search"
+        android:layout_below="@+id/spinnerArea"
+        android:layout_alignRight="@+id/spinnerArea"
+        android:layout_alignEnd="@+id/spinnerArea"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/btnBackBook"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSearch"
+        android:layout_alignLeft="@+id/spinnerArea"
+        android:layout_alignStart="@+id/spinnerArea"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="Back" />
+
+</RelativeLayout>

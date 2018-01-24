@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syafikha.e_baebishita.ratingDetails"
+    android:background="@drawable/cubaan">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Rate Your Babysitter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView27"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="36dp"
+        android:text="Booking ID"
+        android:id="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/txtBookingID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="txtBookingID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:layout_marginTop="20dp"
+        android:text="Parent HP"
+        android:id="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/txtParentHP"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBookingID"
+        android:layout_alignStart="@+id/txtBookingID"
+        android:layout_alignTop="@+id/textView36"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Babysitter HP"
+        android:layout_below="@+id/textView36"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:id="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/txtBabysitterHP"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtParentHP"
+        android:layout_alignStart="@+id/txtParentHP"
+        android:layout_alignTop="@+id/textView39"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView39"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/btnRate"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Rate"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignRight="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar" />
+
+    <Button
+        android:id="@+id/btnBackRate"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignBaseline="@+id/btnRate"
+        android:layout_alignBottom="@+id/btnRate"
+        android:layout_toLeftOf="@+id/txtBabysitterHP"
+        android:layout_toStartOf="@+id/txtBabysitterHP" />
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBackRate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text="TextView" />
+
+</RelativeLayout>

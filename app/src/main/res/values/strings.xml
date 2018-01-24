@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">e-baebishita</string>
+    <string name="login">Login</string>
+    <string name="phone_number">hpLogin</string>
+    <string name="password">passwordLogin</string>
+    <string name="loginBtn">Login</string>
+    <string name="sign_up">Sign Up</string>
+
+
+    <string-array name="religion_arrays">
+        <item>Religion</item>
+        <item>Islam</item>
+        <item>Christian</item>
+        <item>Buddha</item>
+        <item>Hindu</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="religion_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="area_spinner">
+        <item>Please choose area</item>
+        <item>Kidurong</item>
+        <item>Medan Jaya</item>
+        <item>Sebiew</item>
+        <item>Taman Sri Pelabuhan</item>
+        <item>Kemena</item>
+    </string-array>
+
+    <string-array name="special_spinner">
+        <item>Any special need?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="numChild_spinner">
+        <item>Please choose number of children</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="location_spinner">
+        <item>Please choose location to babysit</item>
+        <item>Babysitter House</item>
+        <item>Parent House</item>
+
+    </string-array>
+
+    <string-array name="packages_spinner">
+        <item>Please choose packages</item>
+        <item>Per Hour</item>
+        <item>Per Day</item>
+
+    </string-array>
+</resources>

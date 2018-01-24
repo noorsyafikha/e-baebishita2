@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syafikha.e_baebishita.afterLogin"
+    android:background="@drawable/cubaan">
+
+    <TextView
+        android:id="@+id/txtParentName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnBook"
+        android:layout_alignLeft="@+id/btnBook"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnBook"
+        android:layout_alignStart="@+id/btnBook"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:id="@+id/btnBook"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Book Babysitter"
+        android:layout_below="@+id/txtParentName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnManageBook"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Manage Booking" />
+
+    <Button
+        android:id="@+id/btnRate"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Rate babysitter"
+        android:layout_below="@+id/btnManageBook"
+        android:layout_alignLeft="@+id/btnManageBook"
+        android:layout_alignStart="@+id/btnManageBook" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:layout_below="@+id/btnRate"
+        android:layout_alignLeft="@+id/btnRate"
+        android:layout_alignStart="@+id/btnRate"
+        android:layout_alignRight="@+id/btnRate"
+        android:layout_alignEnd="@+id/btnRate" />
+
+    <Button
+        android:id="@+id/btnFAQ"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnProfile"
+        android:layout_marginTop="16dp"
+        android:text="FAQ"
+        android:layout_alignRight="@+id/btnRate"
+        android:layout_alignEnd="@+id/btnRate"
+        android:layout_alignLeft="@+id/btnProfile"
+        android:layout_alignStart="@+id/btnProfile" />
+
+    <Button
+        android:id="@+id/btnTerm"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFAQ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Term And Condition" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@+id/btnTerm"
+        android:layout_alignLeft="@+id/btnTerm"
+        android:layout_alignStart="@+id/btnTerm"
+        android:layout_marginTop="17dp" />
+</RelativeLayout>
